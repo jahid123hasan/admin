@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase / Jahid
+RewriteCond %{REQUEST_FILENAMEE} !-f
+RewriteCond %{REQUEST_FILENAMEE} !-d
+RewriteRule ^(.*)$ index.php?/$1[L]
+
